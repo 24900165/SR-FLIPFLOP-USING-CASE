@@ -62,4 +62,5 @@ RegisterNumber:24900165
 
 
 **RESULTS**
+
 SR flipflop is studied and verified successfully using quartus software.
