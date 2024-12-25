@@ -36,13 +36,21 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 **PROGRAM**
 
 module experiment6(S,R,clk,Q,Qbar);
+
  input S,R,clk;
+ 
  output reg Q;
+ 
  output reg Qbar;
+ 
  initial Q=0;
+ 
  initial Qbar=1;
+ 
  always @(posedge clk) begin Q=S |((~R)&Q);
+ 
  Qbar=R |((~S)&(Qbar));
+ 
  end endmodule
 
 
